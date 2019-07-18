@@ -33,7 +33,7 @@ set(NFD_LIBRARY_LINUX  "${PROJECT_SOURCE_DIR}/Deps/NativeFileDialog114/build/lib
 set(NFD_LIBRARY_WIN    "${PROJECT_SOURCE_DIR}/Deps/NativeFileDialog114/build/lib/Release/x64/libnfd.dll")
 set(SERIAL_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/Deps/serial/include")
 set(SPDLOG_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/Deps/spdlog/include")
-
+set(TWEENY_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/Deps/tweeny/include")
 # Find Dependencies ############################################################
 
 find_package(Freetype REQUIRED)
@@ -61,6 +61,7 @@ include_directories(
 	${NFD_INCLUDE_DIR}
 	${JSON_INCLUDE_DIR}
 	${SPDLOG_INCLUDE_DIR}
+	${TWEENY_INCLUDE_DIR}
 )
 
 
